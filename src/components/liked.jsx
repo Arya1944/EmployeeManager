@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 class Liked extends Component {
   getIcon(liked) {
-    const cName = "fa fa-heart";
+    const cName = "fa fa-user";
+    //<i class="far fa-user"></i>fa fa-heart
 
-    return liked === true ? cName : cName + "-o";
+    return liked === true ? cName : cName + "-times";
   }
 
   render() {
